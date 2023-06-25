@@ -6,6 +6,7 @@ import de.ait.models.Product;
 import de.ait.models.User;
 import de.ait.repositories.users.UsersRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UsersRepositoryFakeImpl implements UsersRepository {
@@ -16,9 +17,10 @@ public class UsersRepositoryFakeImpl implements UsersRepository {
 
     @Override
     public List<User> findAll() {
-        User user1 = new User("First name1","Last name1","1.@mail.com");
-        User user2 = new User("First name2","Last name2","2.@mail.com");
-        List<User> users= List.of(user1,user2);
+        List<User> users = new ArrayList<>();
+        users.add(new User("First name1","Last name1","1.@mail.com"));
+        users.add(new User("First name2","Last name2","2.@mail.com"));
+
         return users;
 
     }
