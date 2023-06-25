@@ -47,7 +47,7 @@ public class DeliveryOffGoodsRepositoryTextFileImpl implements DeliveryOffGoodsR
     @Override
     public void save(DeliveryOffGoods delivery) {
         try (BufferedWriter bufferedWriter = new BufferedWriter
-                (new FileWriter(fileName, true))) {
+                (new FileWriter(fileName, true));) {
 
             String deliveryObject = "";
 

@@ -45,7 +45,7 @@ public class CashWarrantRepositoryTextFileImpl implements CashWarrantRepository 
     @Override
     public void save(CashWarrant cashWarrant) {
         try (BufferedWriter bufferedWriter = new BufferedWriter
-                (new FileWriter(fileName, true))) {
+                (new FileWriter(fileName, true));) {
 
             String cashWarrantObject = "";
 

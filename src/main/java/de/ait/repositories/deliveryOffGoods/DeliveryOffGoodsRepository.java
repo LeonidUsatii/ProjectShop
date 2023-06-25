@@ -1,7 +1,6 @@
 package de.ait.repositories.DeliveryOffGoods;
 
 import de.ait.models.DeliveryOffGoods;
-import de.ait.models.Product;
 import de.ait.repositories.CrudRepository;
 
 import java.util.List;
